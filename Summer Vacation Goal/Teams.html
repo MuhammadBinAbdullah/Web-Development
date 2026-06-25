@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams Progress Bar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body{
+        background-color: lightsalmon;
+    }
+
+    h2{font-style: italic;}
+
+    div{width: 50%;}
+  </style>
+</head>
+<body>
+    
+
+    <center> <img src="images.jpg" style="width:200px;"</center>
+    <br>
+    <h1>Teams Progress Bar</h1>
+
+       <div class="container">
+        
+    <h2>Portugal VS Argentina</h2>
+    <br>
+    <h5>Portugal Has 70% Chance To Win </h5>
+    <br>
+    <div class="progress">
+        <div class="progress-bar" style="width: 70%;">70%</div>
+        <br>
+
+    </div>
+   </div>
+<br>
+   <h5>Argentina Has 30% Chance To Win </h5>
+   <br>
+    <div class="progress">
+        <div class="progress-bar" style="width: 30%;">30%</div>
+    </div>
+        <br>
+   <h4>Support The Portugal And Do Progress Bar 100% By Click The Button</h4>
+   <br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiehB2WSFyPO9BLFUHRLwAEGDlO1bvzdUWAWWkqjxLFg&s" width="350px">
+   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAACZCAMAAAArbjd1AAAA8FBMVEV0rN////9Xntn2tA75tw7r4+L9/Pz18fH38/DcyL3j1tLRsZrSsZbIqJbw7O349vXFehT5/P/h0svKgxu/j2XEl3G9gTzFk2DPgQDf1NS9kHDHggPjoAnOmVXAi2jk1MnBeSTVpm+7cADXv7DWvbTbtpTx5Ni3cBHp08HFiUvQqoe5hV3LkUzlxqfNonrVrH/Hiz7lwZrPm2PbnErXjg7jybLfp1nAfyTjsXPgni/EjlTIdgDVkSq4dznDnIfbvKioXg6qZiezbSS+npaZUyiWSADQjzapcU2vfFy0iHPk4Om3kIXTw8OWORKmTwiwXAgaFOjCAAAFL0lEQVR4nO3bjXKiOhQH8J6r4UtAIypapBZUFDYqKsoWa8V2t911u9v3f5sbbO/O3BdIZ/D8Zmq/nGn+kxAScnp1hRBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgihkvvnIl3BRcLYlwRji0SaAKoKIGv1T/n7nxCbSCANawC1GlBjBCAR8W34hNi6AVJtzD/roLUCAEMX3wbBsYueNSd1mIYEoggCFkB9YvIfS2LbITi28oXntmtA2AzmCwjiAGo2H/M/TLHtEN3belsGrUHp0qsvFjC1AtrQYBCKvrxFxm7yeYysVgpYQ5jFiufB7JkMLaDjiM/ntabApoiMXW+1eW7Xlow15bFXKzle0rUBgbUBaLdE3srEDvKOzW/XyYDu1E2oZFnQGKg7KmdbAnZHaEOExa6PNP6auhL92gHbG/oBC2vbk2fLnbsmZCl/BxE3n4vrbfVmSijErjLckabVtgZxZ+6NrGZ2ryluLIE53z8IG+fiYtcPjC2JzNweS7U4C730dmW346iryi5TgHiZwJuYqNgy/yAba9sjbGV07et0n+f58TG9tsITc01y2Mbk420iiIp9fTPgryRd98w4fugecyvp9/tOvneeGBtF691CARjcXAtqjqjYSnN/q1NQfKfWi9NvfqVS5SqVxnfr1njePShA9dtQVQQ1R+ANTMu6HVVpdZ2Xt4QHfldN3n44TAO10800cW0RFJtItE7h5N35etTxHZ76HLz47ExCVffvvRNfuiqBoO4WE1v6aRyiaDY1ydjlk1mV5+3zUc5feO7JMWXzkUnIdBy2DDH3MEG9LR/G46W7c2cbPcv7PO9flWr/mLU8N17HqbcxSaliA1BK5WDs+1aa875OGlaSJH2rkfBvHlPH3Uw300DU7UvklEZN89R7Hf16mfCR3Z/kTr+f5HkxzP2Xp9fX0+lkUmGNERPb+P3nzW90k4LjFJNZP+EDvZIUqSuOc/5Ft+u//fltCGmQyN7mHfr6+vTin+fw8/VdPc/nk5dfo9feySxdbxfkgF++G9dJHz9u2HyQv9+789Ty/XEg88tfVGPExK4Tc+OlfLJ2vVZ27Bd9XC2m8fcv8kzfzPg0vxzrB0GzmqDYRjscTwkxR3OWHifV96v7/cqu5vvUHRNzOouig/FTzJZb0CDnyy8+gM+rNDWcOOfcyXmMVx2/E+n+HV+l8YWcqKMC0Wty0Jjz4/9r8hen21LKuSb/uwN72D0bt9b3xn87MP9bGvdqjn/ege2bZduBnffbymK3jkaMPTn7YrXST6z82H2IY7O3TvnopuXbb5+frsTbAzFddgqt6/TxmOd8Mru2u8aKkd7W2pTx6QpnZh4Bhbmy2o3itr26Tb0wi7WU9VwmkyVjB3FPysU9MH7Yz02QYlfR7rOmNfLmnXiQzq0m2Q0VNwZKpjeqqMaIiy2RYk+ZZtC868i2d9rWQhb4Q8+GzlcquSl/izYq4QPjQscGss1kulMHjSDLlHCj7ugg4b1c1lMR+DgD21gBGGu6jOXVSolndG1ItkvKfAZWnHjWozEFa0ieZ+B5PDYMLVBWK1LiE8+CFg6K8+3AmsJiUfeWtDjfltt6uasZzC9DqahmKMoYFnOYMVJUMwD5Imp59kF47Yp0rl0pilaiCEg4PdeuQMlrVwq6ARC0tKJSCcY16RIqlQpFz44MWtSlQY2P+QupS+Pqmvxehdj8hMgFrDm9JBj7klzq/4oghBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQqjk/gUjf758HFOHzQAAAABJRU5ErkJggg==" width="350px">
+
+<br>
+<br>
+   <button type="button" class="btn btn-danger">Portugal</button>
+        <button type="button" class="btn btn-primary">Argentina</button>
+        <br>
+        <br>
+        <br>
+<audio controls>
+                <source src="Pitbull ft. Taylor Swift & Shakira - One World One Game  FIFA World Cup 2026 (Anthem Global Song).mp3">
+            </audio>
+</body>
+</html>
