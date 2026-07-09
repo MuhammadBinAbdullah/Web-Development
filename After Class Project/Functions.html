@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="multiply(4)">*</button> 
+    <button onclick="Plus(10)">+</button> 
+    <button onclick="Subtract(8)">-</button> 
+    <p id="result"></p> 
+    <p id="++"></p>
+    <p id="--"></p>
+
+    <script>
+
+function multiply(a,b)
+{
+    if(b === undefined)
+    {
+    alert ("The value of b is undefined");
+    b=5;
+    }
+    var result = a * b;
+
+    document.getElementById("result").innerHTML = result;
+}
+
+function Plus(d,e)
+{
+    if(e === undefined)
+    {
+    alert ("The value of e is undefined");
+    e=3;
+    }
+    var result = d + e;
+
+    document.getElementById("++").innerHTML = result;
+}
+
+function Subtract(x,y)
+{
+    if(y === undefined)
+    {
+    alert ("The value of e is undefined");
+    y=6;
+    }
+    var result = x - y;
+
+    document.getElementById("--").innerHTML = result;
+}
+
+</script>
+</body>
+</html>
