@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Balls</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    text-align:center;
+}
+
+h1{
+    margin-top:20px;
+    font-size:40px;
+}
+
+.controls{
+    margin:20px;
+}
+
+button{
+    padding:12px 20px;
+    margin:6px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.generate{
+    background:#00b894;
+    color:white;
+}
+
+.red{
+    background:red;
+    color:white;
+}
+
+.blue{
+    background:dodgerblue;
+    color:white;
+}
+
+.green{
+    background:limegreen;
+    color:white;
+}
+
+.yellow{
+    background:gold;
+}
+
+.purple{
+    background:purple;
+    color:white;
+}
+
+.random{
+    background:orange;
+    color:white;
+}
+
+#playground{
+    width:95%;
+    height:500px;
+    margin:20px auto;
+    border:3px solid white;
+    border-radius:15px;
+    position:relative;
+    overflow:hidden;
+    background:#111827;
+}
+
+.ball{
+    position:absolute;
+    border-radius:50%;
+}
+</style>
+
+</head>
+<body>
+
+<h1>🎱 Random Balls</h1>
+
+<div class="controls">
+<button class="generate" onclick="generateBalls()">Generate Balls</button>
+
+<button class="red" onclick="changeColor('red')">Red</button>
+
+<button class="blue" onclick="changeColor('dodgerblue')">Blue</button>
+
+<button class="green" onclick="changeColor('limegreen')">Green</button>
+
+<button class="yellow" onclick="changeColor('gold')">Yellow</button>
+
+<button class="purple" onclick="changeColor('purple')">Purple</button>
+
+<button class="random" onclick="randomColors()">Random Colors</button>
+</div>
+
+<div id="playground"></div>
+
+<script>
+
+const playground=document.getElementById("playground");
+
+function generateBalls(){
+
+playground.innerHTML="";
+
+for(let i=0;i<30;i++){
+
+let ball=document.createElement("div");
+
+ball.className="ball";
+
+let size=Math.random()*60+20;
+
+ball.style.width=size+"px";
+ball.style.height=size+"px";
+
+ball.style.left=Math.random()*(playground.clientWidth-size)+"px";
+ball.style.top=Math.random()*(playground.clientHeight-size)+"px";
+
+ball.style.background=randomColor();
+
+playground.appendChild(ball);
+
+}
+
+}
+
+function changeColor(color){
+
+document.querySelectorAll(".ball").forEach(ball=>{
+ball.style.background=color;
+});
+
+}
+
+function randomColors(){
+
+document.querySelectorAll(".ball").forEach(ball=>{
+ball.style.background=randomColor();
+});
+
+}
+
+function randomColor(){
+
+return "rgb("
++Math.floor(Math.random()*256)+","
++Math.floor(Math.random()*256)+","
++Math.floor(Math.random()*256)+")";
+
+}
+
+generateBalls();
+
+</script>
+
+</body>
+</html>
