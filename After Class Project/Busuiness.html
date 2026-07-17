@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BusinessPro</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#02162f,#0a2f6d,#02162f);
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+padding-top:40px;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+width:95%;
+
+max-width:1600px;
+
+height:95px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+border-radius:30px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 40px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo-icon{
+
+width:55px;
+
+height:55px;
+
+border-radius:12px;
+
+background:linear-gradient(135deg,#009dff,#005eff);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+color:white;
+
+font-weight:bold;
+
+}
+
+.logo h1{
+
+color:white;
+
+font-size:38px;
+
+}
+
+.logo span{
+
+color:#2fa8ff;
+
+}
+
+.logo p{
+
+color:#9fb5d8;
+
+font-size:13px;
+
+letter-spacing:3px;
+
+margin-top:-5px;
+
+}
+
+/* MENU */
+
+nav{
+
+display:flex;
+
+align-items:center;
+
+gap:45px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+font-size:20px;
+
+font-weight:500;
+
+transition:.3s;
+
+position:relative;
+
+}
+
+nav a:hover{
+
+color:#2fa8ff;
+
+}
+
+.active{
+
+color:#2fa8ff;
+
+}
+
+.active::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:100%;
+
+height:3px;
+
+background:#2fa8ff;
+
+border-radius:20px;
+
+}
+/* NAVBAR */
+.navbar{
+    width:95%;
+    max-width:1600px;
+    height:95px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;   /* Increased from 40px */
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:20px;   /* Increased from 15px */
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    align-items:center;
+    gap:60px;   /* Increased from 45px */
+    margin-left:120px; /* Push menu away from logo */
+}
+
+/* Right Side */
+.right{
+    display:flex;
+    align-items:center;
+    gap:35px;   /* Increased from 25px */
+    margin-left:80px; /* Push Get Started away from menu */
+}
+
+/* Button */
+.btn{
+    padding:18px 42px;
+    background:linear-gradient(135deg,#006eff,#00aaff);
+    border-radius:60px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    font-size:18px;
+}
+
+/* BUTTON */
+
+.btn{
+
+padding:18px 38px;
+
+background:linear-gradient(135deg,#006eff,#00aaff);
+
+border-radius:60px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:600;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 25px rgba(0,132,255,.4);
+
+}
+
+/* MENU ICON */
+
+.menu{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+border:1px solid rgba(255,255,255,.2);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.menu:hover{
+
+background:#006eff;
+
+}
+
+.right{
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
+}
+
+@media(max-width:1200px){
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+
+B
+
+</div>
+
+<div>
+
+<h1>Business<span>Pro</span></h1>
+
+<p>BUILDING YOUR SUCCESS</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="#" class="active">Home</a>
+
+<a href="#">Services</a>
+
+<a href="#">About</a>
+
+<a href="#">Projects</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+<div class="right">
+
+<a href="#" class="btn">
+
+Get Started
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+<div class="menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
