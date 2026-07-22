@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BusinessPro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#0066ff;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#0066ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,#0066ff,#00c6ff);
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#0066ff;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0066ff;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.box{
+background:#0066ff;
+color:white;
+padding:35px;
+border-radius:15px;
+}
+
+.box h2{
+font-size:45px;
+}
+
+.contact{
+background:white;
+padding:40px;
+max-width:700px;
+margin:auto;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#0066ff;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">BusinessPro</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Grow Your Business</h1>
+
+<p>
+We help companies build modern digital solutions that increase sales,
+improve customer experience, and grow faster.
+</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Website Development</h3>
+<p>Professional responsive websites for your business.</p>
+</div>
+
+<div class="card">
+<h3>Digital Marketing</h3>
+<p>Reach more customers using modern marketing strategies.</p>
+</div>
+
+<div class="card">
+<h3>SEO Optimization</h3>
+<p>Improve your Google ranking and increase traffic.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Why Choose Us?</h2>
+
+<div class="stats">
+
+<div class="box">
+<h2>500+</h2>
+<p>Projects</p>
+</div>
+
+<div class="box">
+<h2>300+</h2>
+<p>Clients</p>
+</div>
+
+<div class="box">
+<h2>12+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="box">
+<h2>99%</h2>
+<p>Client Satisfaction</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>BusinessPro</h2>
+
+<p>© 2026 BusinessPro. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
