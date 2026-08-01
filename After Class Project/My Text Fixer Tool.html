@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Fixer Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body{
+            background: #fff7e6;
+        }
+
+        h1, h3{
+            color: #d35400;
+        }
+
+        .box{
+            background: white;
+            color: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="mb-1">My Text Fixer Tool</h1>
+        <p class="mb-4">Check Types, Convert Values, Find And Replace Words, And Catch Errors!</p>
+
+          <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">What type Is It ?</h3>
+                <button class="btn btn-waring" onclick="checkTypes()">Check Data Types</button>
+                <div id="typeResult" class="box p-3 mt-3 rounded">Click The Button To Check The Types !</div>
+            </div>
+          </div>  
+
+          <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Convert Data Types</h3>
+                <button class="btn btn-waring" onclick="convertTypes()">Convert Values</button>
+                <div id="convertResult" class="box p-3 mt-3 rounded">Click The Button To Convert Value !</div>
+            </div>
+          </div>  
+
+          <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Fix My Sentence</h3>
+                <p>Sentence : I Like Mathes Because Maths Is Fun !</p>
+                <button class="btn btn-waring" onclick="replaceText()">Replace Word</button>
+                <div id="replaceResult" class="box p-3 mt-2 rounded">Click The Button To Replace A Word !</div>
+            </div>
+          </div>  
+
+          <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Error Catcher</h3>
+                <button class="btn btn-waring" onclick="catchError()">Test Error Catcher</button>
+                <div id="errorResult" class="box p-3 mt-2 rounded">Click The Button To Test The Error Catcher !</div>
+            </div>
+          </div>  
+    </div>
+
+    <script>
+        function checkTypes() {
+            var name = "Muhammad";
+            var score = 95;
+            var isReady = true;
+
+            document.getElementById("typeResult").innerHTML =
+             "Name :" + typeof name + "<br>" +
+             "Score :" + typeof Score + "<br>" +
+             "Is Ready :" + typeof isReady;
+        }
+
+        function convertTypes() {
+            var marksText = "88";
+            var marksNumber = Number("marksText");
+            var age = 12;
+            var ageText = String(age);
+
+            document.getElementById("convertResult").innerHTML =
+             '"88" as a number : ' + marksNumber + "<br>" +
+             "Type :" + typeof marksNumber + "<br><br>" +
+             "12 as text :" + AgeText + "<br>" +
+             "Type :" + typeof ageText;
+        }
+
+        function replaceText() {
+            var sentence = "I like maths because maths is fun.";
+            var newSentence = sentence.replace("maths", "coding");
+
+            document.getElementById("replaceResult").innerHTML =
+             "Original: " + sentence + "<br><br>" +
+             "Fixed: " + newSentence;
+         }
+
+        function catchError() {
+        try {
+            var result = totalMarks + 10;
+            document.getElementById("errorResult").innerHTML = "Result: " + result;
+            }
+
+        catch(error) {
+            document.getElementById("errorResult").innerHTML =
+            "Oops! An error was caught: " + error.message;
+        }
+        }
+
+    </script>
+</body>
+</html>
