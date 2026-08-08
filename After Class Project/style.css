@@ -1,0 +1,57 @@
+       * {
+            margin-top: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .blue {
+            background: #00e5ff;
+            color: black;
+        }
+
+        .purple {
+            background: #7c3aed;
+            color: white;
+        }
+
+
+
+body{
+  margin:0;
+  font-family:"Baloo Tamma 2", sans-serif;
+  background:#dab7b7;
+}
+
+.navigation{
+  background:#222;
+  border-top:2px solid #f2a900;
+  padding:30px 40px !important;
+}
+
+.brand-logo{
+  height:26px;
+  width:auto;
+}
+
+.navigation-link{
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  color:#fffefe !important;
+}
+
+.navigation-link:hover{
+  color:#f2a900 !important;
+}
+
