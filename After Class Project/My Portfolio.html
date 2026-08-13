@@ -1,0 +1,170 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad | Portfolio</title>
+
+<style>
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+   }
+
+    body{
+        background:#0f172a;
+        color:#fff;
+        line-height:1.6
+    }
+
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 10%;
+        background:#111827;
+        position:sticky;
+        top:0
+    }
+
+    .logo{
+       font-size:28px;
+       font-weight:bold;
+       color:#38bdf8
+    }
+
+    nav a{
+        color:#fff;
+        text-decoration:none;
+        margin-left:20px
+        ;transition:.3s
+    }
+
+    nav a:hover{
+        color:#38bdf8
+    }
+
+    .hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero h1{font-size:55px}
+.hero h1 span{color:#38bdf8}
+.hero p{margin:20px 0;font-size:20px;max-width:700px}
+.btn{display:inline-block;background:#38bdf8;color:#000;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:bold}
+section{padding:70px 10%}
+h2{text-align:center;font-size:35px;color:#38bdf8;margin-bottom:30px}
+.about p{text-align:center;max-width:800px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#1e293b;padding:25px;border-radius:12px;transition:.3s}
+.card:hover{transform:translateY(-8px);background:#334155}
+.skills span{display:inline-block;background:#38bdf8;color:#000;padding:8px 15px;border-radius:20px;margin:8px;font-weight:bold}
+.contact{text-align:center}
+input,textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px}
+button{padding:12px 25px;border:none;background:#38bdf8;font-weight:bold;border-radius:30px;cursor:pointer}
+footer{text-align:center;padding:20px;background:#111827;margin-top:30px}
+@media(max-width:768px){
+header{flex-direction:column}
+nav{margin-top:15px}
+.hero h1{font-size:40px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Muhammad</div>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Hi, I'm <span>Muhammad</span></h1>
+<p>Front And Back-end Web Developer creating beautiful, responsive websites using HTML, CSS, Bootstrap and JavaScript.</p>
+<a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about" class="about">
+<h2>About Me</h2>
+<p>
+Hello! I'm Muhammad Bin Abdullah, a passionate Frontend Web Developer from Pakistan.
+I build modern, responsive websites and create coding tutorials on YouTube to help beginners learn web development.
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills" style="text-align:center">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>Bootstrap</span>
+<span>Responsive Design</span>
+<span>GitHub</span>
+<span>VS Code</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>Sports Website</h3>
+<p>Modern responsive sports landing page with animations.</p>
+</div>
+
+<div class="card">
+<h3>Restaurant Website</h3>
+<p>Beautiful restaurant website with menu and booking design.</p>
+</div>
+
+<div class="card">
+<h3>Calculator App</h3>
+<p>Simple calculator built using HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal portfolio with responsive layout and modern UI.</p>
+</div>
+
+<div class="card">
+<h3>Business Landing Page</h3>
+<p>Professional website for startups and businesses.</p>
+</div>
+
+<div class="card">
+<h3>Education Website</h3>
+<p>Clean educational website for coding courses.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Me</h2>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button onclick="sendMessage()">Send Message</button>
+
+<p id="msg" style="margin-top:20px;color:#38bdf8;"></p>
+</section>
+
+<footer>
+<p>© 2026 Muhammad Bin Abdullah | Frontend Web Developer</p>
+</footer>
+
+<script>
+function sendMessage(){
+document.getElementById("msg").innerHTML=
+"✅ Thank you! Your message has been received.";
+}
+</script>
+
+</body>
+</html>

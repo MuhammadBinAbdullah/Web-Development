@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>14 August - Pakistan Zindabad 🇵🇰</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#001f12,#006b3c,#003d24);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.25);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#fff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#b8ffd7;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px 50px;
+    position:relative;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.flag{
+    width:260px;
+    height:160px;
+    margin:0 auto 30px;
+    background:#fff;
+    position:relative;
+    border-radius:5px;
+    box-shadow:0 0 40px rgba(255,255,255,.2);
+    overflow:hidden;
+    animation:wave 2s infinite ease-in-out;
+}
+
+.flag::before{
+    content:"";
+    position:absolute;
+    width:75%;
+    height:100%;
+    right:0;
+    background:#006847;
+}
+
+.moon{
+    position:absolute;
+    right:65px;
+    top:45px;
+    width:60px;
+    height:60px;
+    background:white;
+    border-radius:50%;
+}
+
+.moon::after{
+    content:"";
+    position:absolute;
+    width:55px;
+    height:55px;
+    background:#006847;
+    border-radius:50%;
+    left:17px;
+    top:-7px;
+}
+
+.star{
+    position:absolute;
+    right:42px;
+    top:48px;
+    color:white;
+    font-size:35px;
+    z-index:3;
+}
+
+@keyframes wave{
+    0%,100%{transform:rotate(-1deg);}
+    50%{transform:rotate(1deg) scale(1.02);}
+}
+
+.hero h1{
+    font-size:80px;
+    font-weight:900;
+    text-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.hero h2{
+    font-size:38px;
+    margin:10px 0;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:white;
+    color:#006847;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+/* SECTIONS */
+section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    padding:35px;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,.15);
+}
+
+.card .icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+    opacity:.85;
+}
+
+/* COUNTDOWN */
+.countdown{
+    text-align:center;
+    background:rgba(0,0,0,.15);
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+    width:130px;
+    padding:25px 10px;
+    background:rgba(255,255,255,.1);
+    border-radius:15px;
+}
+
+.time-box span{
+    display:block;
+    font-size:45px;
+    font-weight:bold;
+}
+
+.time-box small{
+    font-size:15px;
+}
+
+/* QUOTE */
+.quote{
+    text-align:center;
+}
+
+.quote-box{
+    max-width:800px;
+    margin:auto;
+    padding:45px;
+    border-radius:25px;
+    background:rgba(255,255,255,.1);
+}
+
+.quote-box h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.quote-box p{
+    font-size:20px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#001c10;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    opacity:.7;
+}
+
+/* FIREWORKS */
+.firework{
+    position:fixed;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:white;
+    animation:explode 1.5s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes explode{
+    0%{
+        box-shadow:0 0 0 0 white;
+        opacity:1;
+    }
+    100%{
+        box-shadow:
+        40px -40px white,
+        -40px -40px white,
+        60px 0 white,
+        -60px 0 white,
+        40px 40px white,
+        -40px 40px white,
+        0 60px white,
+        0 -60px white;
+        opacity:0;
+    }
+}
+
+/* MOBILE */
+@media(max-width:800px){
+    nav ul{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:55px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🇵🇰 Pakistan Zindabad</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#countdown">Countdown</a></li>
+        <li><a href="#message">Message</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="flag">
+            <div class="moon"></div>
+            <div class="star">★</div>
+        </div>
+
+        <h1>14 AUGUST</h1>
+
+        <h2>🇵🇰 Happy Independence Day 🇵🇰</h2>
+
+        <p>
+            Celebrating freedom, unity, courage and the spirit of Pakistan.
+        </p>
+
+        <a href="#about" class="btn">Explore Pakistan</a>
+
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="title">Our Independence 🇵🇰</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🇵🇰</div>
+            <h3>Pakistan</h3>
+            <p>
+                Pakistan celebrates its Independence Day every year
+                on 14 August.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⭐</div>
+            <h3>Unity</h3>
+            <p>
+                Our strength comes from unity, hope and working
+                together for a better future.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💚</div>
+            <h3>Freedom</h3>
+            <p>
+                Independence reminds us to value freedom and
+                contribute positively to our country.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown" id="countdown">
+
+    <h2 class="title">14 August Countdown ⏳</h2>
+
+    <div class="timer">
+
+        <div class="time-box">
+            <span id="days">00</span>
+            <small>Days</small>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">00</span>
+            <small>Hours</small>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MESSAGE -->
+<section class="quote" id="message">
+
+    <div class="quote-box">
+
+        <h2>🇵🇰 Pakistan Zindabad 🇵🇰</h2>
+
+        <p>
+            "May Pakistan continue to grow with peace,
+            unity and prosperity."
+        </p>
+
+        <br>
+
+        <strong>14 August Mubarak! 💚</strong>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>🇵🇰 Pakistan Zindabad 🇵🇰</h2>
+
+    <p>
+        Made with ❤️ for Pakistan | 14 August
+    </p>
+
+</footer>
+
+<script>
+
+/* COUNTDOWN */
+
+function countdown(){
+
+    const now = new Date();
+
+    let year = now.getFullYear();
+
+    let target = new Date(
+        year + "-08-14T00:00:00"
+    );
+
+    if(now > target){
+        target = new Date(
+            (year + 1) + "-08-14T00:00:00"
+        );
+    }
+
+    const difference = target - now;
+
+    const days = Math.floor(
+        difference / (1000 * 60 * 60 * 24)
+    );
+
+    const hours = Math.floor(
+        (difference / (1000 * 60 * 60)) % 24
+    );
+
+    const minutes = Math.floor(
+        (difference / (1000 * 60)) % 60
+    );
+
+    const seconds = Math.floor(
+        (difference / 1000) % 60
+    );
+
+    document.getElementById("days").textContent =
+        String(days).padStart(2,"0");
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2,"0");
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2,"0");
+}
+
+setInterval(countdown,1000);
+countdown();
+
+
+/* FIREWORKS */
+
+function createFirework(){
+
+    const firework = document.createElement("div");
+
+    firework.className = "firework";
+
+    firework.style.left =
+        Math.random() * 100 + "%";
+
+    firework.style.top =
+        Math.random() * 70 + "%";
+
+    document.body.appendChild(firework);
+
+    setTimeout(()=>{
+        firework.remove();
+    },1500);
+}
+
+setInterval(createFirework,1200);
+
+</script>
+
+</body>
+</html>
