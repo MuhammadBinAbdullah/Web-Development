@@ -6,57 +6,105 @@
     <title>Document</title>
 <style>
 
-body {
-    background-color: lightblue;
+    body {
+      background:#f0f4f8;
+      font-family:Arial; 
+      text-align:center; 
+    }
+
+    .text1 { 
+        color:#1e3a8a; 
+        font-size:40px; 
+    }
+
+    p {
+     font-size:22px;
+     font-weight:bold;
+     }
+
+    #currentBalance { 
+        color:#16a34a; 
+    }
+
+    .text3 { 
+        display:block; 
+        margin:20px; 
+        font-size:18px; 
+    }
+
+   .amountInput {
+     padding:12px; width:250px; 
+     border:2px solid #1e3a8a; 
+     border-radius:8px; 
+    }
+
+   .creditButton,
+   .debitButton { 
+     padding:12px 35px; 
+     margin:15px; border:0; 
+     border-radius:8px; color:white; 
+     font-size:16px; 
+     cursor:pointer; 
+    }
+
+   .creditButton { 
+    background:#16a34a; 
 }
 
-.text1 {
-    color: red;
-    text-decoration: overline;
-}
+   .debitButton { 
+    background:#dc2626; 
+     }
 
-.text2 {
-    color: #71ffb0;
-    text-decoration: line-through;
+   .creditButton:hover,
+   .debitButton:hover { 
+    opacity:.8; 
 }
-
-.text3 {
-    color: rgb(70, 98, 120);
-    text-decoration: underline;
-}
-
-.input-field {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-  font-size: 1em;
-}
-
 
 </style>
 </head>
   <body>
-     <h1 class="text1">Bank App</h1>
+ <center>   <h1 class="text1">Bank App</h1>
+    <p>Current Balance: $<span id="currentBalance">10000</span></p>
 
      <label for="number" class="text3">Enter Transaction Amount</label>
       <input
         type="number"
-        id="age"
+        id="number"
         required
         min="1000"
         max="50000"
         placeholder="Enter Your Amount"
-        class="input-field"
+        class="amountInput"
   
 >
 <br>
-<button class="text2">Credit</button>
+<button class="creditButton">Credit</button>
 <br>
-<button class="text3">Debit</button> 
+<br>
+<button class="debitButton">Debit</button> 
+</center>
+
+<script>
+
+ let balance = 10000;
+let display = document.getElementById("currentBalance");
+let input = document.getElementById("number");
+
+document.querySelector(".creditButton").onclick = function () {
+    let amount = Number(input.value);
+    balance += amount;
+    display.textContent = balance;
+    input.value = "";
+};
+
+document.querySelector(".debitButton").onclick = function () {
+    let amount = Number(input.value);
+    if (amount > balance) return alert("Insufficient Balance!");
+    balance -= amount;
+    display.textContent = balance;
+    input.value = "";
+};
+</script>
 
 </body>
 </html>
