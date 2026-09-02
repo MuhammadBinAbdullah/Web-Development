@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Chachi G 🎂</title>
+
+  <link rel="icon" type="image/png" href="chabhi.jpeg">
+
+<!-- FAVICON -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%,#ff3d9a22,transparent 30%),
+        radial-gradient(circle at 80% 30%,#7b4dff22,transparent 30%),
+        #100019;
+    color:white;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:120px 7% 70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.container{
+    width:100%;
+    max-width:1100px;
+    text-align:center;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:fixed;
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+    width:92%;
+    max-width:1200px;
+    padding:14px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#ffffff10;
+    border:1px solid #ffffff20;
+
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    z-index:1000;
+
+    box-shadow:0 15px 50px #0005;
+}
+
+.nav-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.nav-logo img{
+    width:48px;
+    height:48px;
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid #ff83b7;
+    box-shadow:0 0 20px #ff4f9a77;
+}
+
+.nav-logo strong{
+    display:block;
+    font-size:17px;
+}
+
+.nav-logo small{
+    color:#ffffff99;
+    font-size:10px;
+}
+
+.nav-links{
+    display:flex;
+    gap:8px;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:14px;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background:#ff4f9a;
+    box-shadow:0 0 20px #ff4f9a88;
+}
+
+.menu-btn{
+    display:none;
+    border:0;
+    background:#ff4f9a;
+    color:white;
+    font-size:23px;
+    border-radius:12px;
+    padding:6px 12px;
+    cursor:pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+
+    border:1px solid #ff7db6;
+    border-radius:30px;
+
+    background:#ff4f9a18;
+
+    color:#ffb5d5;
+
+    margin-bottom:25px;
+
+    box-shadow:0 0 30px #ff4f9a22;
+}
+
+.hero h1{
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(65px,10vw,125px);
+
+    line-height:1;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #ff75ad,
+            #c78cff,
+            #fff
+        );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    animation:gradient 5s infinite;
+
+    text-shadow:0 0 50px #ff4f9a55;
+}
+
+@keyframes gradient{
+
+    0%{
+        background-position:0%;
+    }
+
+    50%{
+        background-position:100%;
+    }
+
+    100%{
+        background-position:0%;
+    }
+}
+
+.hero p{
+    margin-top:25px;
+    color:#ffffffbb;
+    font-size:18px;
+}
+
+
+/* ================= HERO PHOTO ================= */
+
+.hero-photo{
+    margin:40px auto 10px;
+
+    width:260px;
+    height:320px;
+
+    padding:8px;
+
+    border-radius:35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f9a,
+            #c66cff,
+            #ffb3d2
+        );
+
+    box-shadow:
+        0 0 30px #ff4f9a55,
+        0 20px 60px #0006;
+
+    animation:photoFloat 4s ease-in-out infinite;
+}
+
+.hero-photo img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:28px;
+
+    display:block;
+}
+
+@keyframes photoFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+
+/* ================= COUNTDOWN ================= */
+
+.countdown-title{
+    margin-top:45px;
+    font-size:18px;
+    color:#ffb7d5;
+}
+
+.countdown{
+    margin:20px auto 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.time-box{
+    width:120px;
+
+    padding:22px 12px;
+
+    border-radius:22px;
+
+    background:#ffffff0d;
+
+    border:1px solid #ffffff20;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 15px 40px #0004;
+}
+
+.time-box span{
+    display:block;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#fff;
+}
+
+.time-box small{
+    color:#ff9fc7;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+}
+
+
+/* ================= TITLES ================= */
+
+.section-title{
+    font-family:"Great Vibes",cursive;
+
+    font-size:70px;
+
+    color:#ff83b7;
+
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    color:#ffffff99;
+
+    margin-bottom:45px;
+}
+
+
+/* ================= WISHES ================= */
+
+.wishes-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+.card{
+    padding:30px 22px;
+
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff12,
+            #ffffff05
+        );
+
+    border:1px solid #ffffff18;
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    border-color:#ff5fa8;
+
+    box-shadow:
+        0 20px 50px #ff3f9425;
+}
+
+.card .emoji{
+    font-size:45px;
+
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+
+    color:#ff9ec7;
+}
+
+.card p{
+    color:#ffffffaa;
+
+    line-height:1.7;
+}
+
+
+/* ================= PHOTO SECTION ================= */
+
+.photo-section{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+    text-align:left;
+}
+
+.large-photo{
+    width:360px;
+    height:470px;
+
+    padding:9px;
+
+    border-radius:35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f9a,
+            #9b5cff,
+            #ffd1e4
+        );
+
+    box-shadow:
+        0 0 40px #ff4f9a44,
+        0 30px 70px #0006;
+}
+
+.large-photo img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:28px;
+
+    display:block;
+}
+
+.photo-text{
+    flex:1;
+    min-width:280px;
+}
+
+.photo-text h2{
+    font-family:"Great Vibes",cursive;
+
+    font-size:65px;
+
+    color:#ff83b7;
+
+    margin-bottom:15px;
+}
+
+.photo-text p{
+    color:#ffffffbb;
+
+    line-height:2;
+
+    font-size:17px;
+}
+
+
+/* ================= MESSAGE ================= */
+
+.message-box{
+    max-width:850px;
+
+    margin:auto;
+
+    padding:55px 40px;
+
+    border-radius:35px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #ff4f9a20,
+            transparent 50%
+        ),
+        #ffffff08;
+
+    border:1px solid #ffffff18;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 30px 80px #0005;
+}
+
+.message-box .big-heart{
+    font-size:70px;
+
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+    50%{
+        transform:scale(1.15);
+
+        filter:
+            drop-shadow(
+                0 0 20px #ff4f9a
+            );
+    }
+}
+
+.message-box p{
+    margin-top:25px;
+
+    color:#ffffffcc;
+
+    line-height:2;
+
+    font-size:17px;
+}
+
+
+/* ================= GIFTS ================= */
+
+.gifts{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:25px;
+}
+
+.gift{
+    padding:40px 20px;
+
+    border-radius:30px;
+
+    background:#ffffff09;
+
+    border:1px solid #ffffff15;
+
+    transition:.4s;
+}
+
+.gift:hover{
+    transform:scale(1.04);
+
+    box-shadow:
+        0 0 40px #ff4f9a33;
+}
+
+.gift-icon{
+    font-size:70px;
+
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+.gift h3{
+    margin-top:15px;
+
+    color:#ff9bc4;
+}
+
+.gift p{
+    margin-top:10px;
+
+    color:#ffffff99;
+}
+
+
+/* ================= QUIZ ================= */
+
+.quiz-box{
+    max-width:800px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#ffffff0b;
+
+    border:1px solid #ffffff20;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 25px 70px #0005;
+}
+
+.quiz-box h3{
+    font-size:22px;
+
+    margin-bottom:30px;
+
+    color:#fff;
+}
+
+.quiz-options{
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:15px;
+}
+
+.quiz-options button{
+    padding:17px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#ffffff12;
+
+    color:white;
+
+    border:1px solid #ffffff18;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.quiz-options button:hover:not(:disabled){
+    background:#ff4f9a;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 25px #ff4f9a44;
+}
+
+.quiz-options button.correct{
+    background:#21c77a;
+
+    box-shadow:
+        0 0 20px #21c77a66;
+}
+
+.quiz-options button.wrong{
+    background:#e94b6b;
+}
+
+.quiz-options button:disabled{
+    cursor:default;
+}
+
+#quizResult{
+    min-height:30px;
+
+    margin:22px 0;
+
+    font-weight:600;
+}
+
+.next-btn{
+    padding:13px 25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f9a,
+            #9b5cff
+        );
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.next-btn:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+        0 10px 30px #ff4f9a55;
+}
+
+.score{
+    margin-top:20px;
+
+    color:#ff9fc7;
+
+    font-weight:600;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    padding:30px;
+
+    text-align:center;
+
+    color:#ffffff66;
+
+    border-top:
+        1px solid #ffffff10;
+}
+
+
+/* ================= STARS ================= */
+
+.star{
+    position:fixed;
+
+    color:#fff;
+
+    pointer-events:none;
+
+    animation:
+        starMove linear infinite;
+
+    z-index:-1;
+}
+
+@keyframes starMove{
+
+    from{
+        transform:translateY(110vh);
+
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-10vh);
+
+        opacity:0;
+    }
+}
+
+
+/* ================= BALLOONS ================= */
+
+.balloon{
+    position:fixed;
+
+    font-size:35px;
+
+    pointer-events:none;
+
+    animation:
+        balloonFloat 7s linear infinite;
+
+    z-index:0;
+}
+
+@keyframes balloonFloat{
+
+    from{
+        transform:translateY(110vh);
+    }
+
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+
+/* ================= FINAL CELEBRATION ================= */
+
+.celebration{
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:5000;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #ff4f9a55,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 20% 20%,
+            #8b5cff44,
+            transparent 30%
+        ),
+
+        #100019;
+}
+
+.celebration-content{
+    animation:
+        celebrateIn 1.2s ease forwards;
+}
+
+@keyframes celebrateIn{
+
+    from{
+        transform:scale(.3);
+
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+
+        opacity:1;
+    }
+}
+
+.celebration .cake{
+    font-size:100px;
+
+    animation:
+        cakeBounce 1s infinite alternate;
+}
+
+@keyframes cakeBounce{
+
+    from{
+        transform:
+            translateY(0)
+            rotate(-4deg);
+    }
+
+    to{
+        transform:
+            translateY(-15px)
+            rotate(4deg);
+    }
+}
+
+.celebration-photo{
+    width:150px;
+    height:150px;
+
+    margin:0 auto 20px;
+
+    padding:5px;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f9a,
+            #9b5cff,
+            #fff
+        );
+
+    box-shadow:
+        0 0 50px #ff4f9a99;
+}
+
+.celebration-photo img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    display:block;
+}
+
+.celebration h2{
+    font-family:"Great Vibes",cursive;
+
+    font-size:
+        clamp(
+            65px,
+            11vw,
+            140px
+        );
+
+    color:#fff;
+
+    text-shadow:
+        0 0 20px #ff4f9a,
+        0 0 60px #ff4f9a,
+        0 0 100px #9b5cff;
+}
+
+.celebration p{
+    font-size:22px;
+
+    color:#ffd2e5;
+
+    margin-top:15px;
+}
+
+.celebration .big-text{
+    font-size:30px;
+
+    margin-top:25px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:800px){
+
+    .nav-links{
+        display:none;
+
+        position:absolute;
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        flex-direction:column;
+
+        padding:15px;
+
+        background:#1a0624ee;
+
+        border-radius:20px;
+
+        border:1px solid #ffffff15;
+
+        backdrop-filter:blur(20px);
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links a{
+        text-align:center;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .wishes-grid,
+    .gifts{
+        grid-template-columns:1fr;
+    }
+
+    .quiz-options{
+        grid-template-columns:1fr;
+    }
+
+    .time-box{
+        width:90px;
+    }
+
+    .time-box span{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .message-box{
+        padding:35px 22px;
+    }
+
+    .quiz-box{
+        padding:25px 18px;
+    }
+
+    .quiz-box h3{
+        font-size:18px;
+    }
+
+    .hero-photo{
+        width:220px;
+        height:280px;
+    }
+
+    .large-photo{
+        width:280px;
+        height:370px;
+    }
+
+    .photo-section{
+        text-align:center;
+    }
+
+    .photo-text h2{
+        font-size:55px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="nav-logo">
+
+        <img src="Chachi G.jpeg" alt="Chachi G">
+
+        <div>
+
+            <strong>
+                Chachi G
+            </strong>
+
+            <small>
+                Birthday Celebration
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="nav-links" id="navLinks">
+
+        <a href="#home" class="active">
+            🏠 Home
+        </a>
+
+        <a href="#wishes">
+            💖 Wishes
+        </a>
+
+        <a href="#photo">
+            📸 Memories
+        </a>
+
+        <a href="#message">
+            💌 Message
+        </a>
+
+        <a href="#gifts">
+            🎁 Celebration
+        </a>
+
+        <a href="#quiz">
+            🧠 Quiz
+        </a>
+
+    </div>
+
+
+    <button
+        class="menu-btn"
+        onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
+</nav>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home">
+
+    <div class="container hero">
+
+        <div class="badge">
+            ✨ A Special Day Is Coming ✨
+        </div>
+
+
+        <h1>
+            Happy Birthday<br>
+            Chachi G
+        </h1>
+
+
+        <p>
+            Get ready for a beautiful day filled with
+            happiness, love, smiles and wonderful memories! 💖
+        </p>
+
+
+        <!-- PHOTO -->
+
+        <div class="hero-photo">
+
+            <img
+                src="Chachi G.jpeg"
+                alt="Chachi G Birthday">
+
+        </div>
+
+
+        <!-- COUNTDOWN -->
+
+        <div id="countdownArea">
+
+            <div class="countdown-title">
+                🎂 Birthday Countdown 🎂
+            </div>
+
+
+            <div class="countdown">
+
+                <div class="time-box">
+
+                    <span id="days">
+                        00
+                    </span>
+
+                    <small>
+                        Days
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="hours">
+                        00
+                    </span>
+
+                    <small>
+                        Hours
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="minutes">
+                        00
+                    </span>
+
+                    <small>
+                        Minutes
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        00
+                    </span>
+
+                    <small>
+                        Seconds
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WISHES ================= -->
+
+<section id="wishes">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Birthday Wishes
+        </h2>
+
+
+        <p class="section-subtitle">
+            Some beautiful wishes for a very special person 💕
+        </p>
+
+
+        <div class="wishes-grid">
+
+
+            <div class="card">
+
+                <div class="emoji">
+                    🌸
+                </div>
+
+                <h3>
+                    Happiness
+                </h3>
+
+                <p>
+                    May your life always be filled with
+                    happiness, laughter and beautiful moments.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="emoji">
+                    💖
+                </div>
+
+                <h3>
+                    Love
+                </h3>
+
+                <p>
+                    May you always be surrounded by love,
+                    care and wonderful people.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="emoji">
+                    ✨
+                </div>
+
+                <h3>
+                    Success
+                </h3>
+
+                <p>
+                    May every new day bring you success,
+                    peace and new reasons to smile.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="emoji">
+                    🌟
+                </div>
+
+                <h3>
+                    Bright Future
+                </h3>
+
+                <p>
+                    May your future shine brighter than
+                    all the stars in the sky.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="emoji">
+                    🥰
+                </div>
+
+                <h3>
+                    Beautiful Moments
+                </h3>
+
+                <p>
+                    May you create countless beautiful
+                    memories with your loved ones.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="emoji">
+                    🎉
+                </div>
+
+                <h3>
+                    Celebration
+                </h3>
+
+                <p>
+                    May this birthday become one of your
+                    most memorable celebrations ever!
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PHOTO / MEMORY ================= -->
+
+<section id="photo">
+
+    <div class="container photo-section">
+
+        <div class="large-photo">
+
+            <img
+                src="Chachi G.jpeg"
+                alt="Beautiful memory of Chachi G">
+
+        </div>
+
+
+        <div class="photo-text">
+
+            <h2>
+                A Beautiful Memory
+            </h2>
+
+            <p>
+                A special picture for a very special
+                birthday celebration. 💖
+            </p>
+
+            <p>
+                May this beautiful smile always remain
+                bright and bring happiness to everyone
+                around you. 🌸
+            </p>
+
+            <p>
+                Wishing you an amazing birthday filled
+                with love, laughter and unforgettable
+                memories! 🎂✨
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MESSAGE ================= -->
+
+<section id="message">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            A Special Message
+        </h2>
+
+
+        <div class="message-box">
+
+            <div class="big-heart">
+                💖
+            </div>
+
+
+            <p>
+
+                Dear Chachi G,<br><br>
+
+                Wishing you a very beautiful and happy birthday!
+                May your special day bring lots of smiles,
+                happiness and unforgettable memories.
+
+                May every coming year bring you more wonderful
+                moments, success, peace and joy.
+
+                You deserve a day as amazing and special as you are. 🌸
+
+            </p>
+
+
+            <p>
+                With lots of love and best wishes! 💕
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GIFTS ================= -->
+
+<section id="gifts">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Let The Celebration Begin!
+        </h2>
+
+
+        <p class="section-subtitle">
+            A little birthday magic is waiting for you 🎉
+        </p>
+
+
+        <div class="gifts">
+
+
+            <div class="gift">
+
+                <div class="gift-icon">
+                    🎂
+                </div>
+
+                <h3>
+                    Birthday Cake
+                </h3>
+
+                <p>
+                    A delicious virtual birthday cake
+                    made especially for you!
+                </p>
+
+            </div>
+
+
+            <div class="gift">
+
+                <div class="gift-icon">
+                    🎁
+                </div>
+
+                <h3>
+                    Special Gift
+                </h3>
+
+                <p>
+                    A surprise gift filled with
+                    happiness and love.
+                </p>
+
+            </div>
+
+
+            <div class="gift">
+
+                <div class="gift-icon">
+                    🎈
+                </div>
+
+                <h3>
+                    Party Time
+                </h3>
+
+                <p>
+                    Balloons, smiles and lots of
+                    birthday excitement!
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUIZ ================= -->
+
+<section id="quiz">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Birthday Quiz
+        </h2>
+
+
+        <p class="section-subtitle">
+            How well do you know Chachi G? 💖
+        </p>
+
+
+        <div class="quiz-box">
+
+            <h3 id="question">
+                Question will appear here
+            </h3>
+
+
+            <div class="quiz-options">
+
+                <button
+                    onclick="checkAnswer(0)"
+                    id="option0">
+                    Option 1
+                </button>
+
+
+                <button
+                    onclick="checkAnswer(1)"
+                    id="option1">
+                    Option 2
+                </button>
+
+
+                <button
+                    onclick="checkAnswer(2)"
+                    id="option2">
+                    Option 3
+                </button>
+
+
+                <button
+                    onclick="checkAnswer(3)"
+                    id="option3">
+                    Option 4
+                </button>
+
+            </div>
+
+
+            <p id="quizResult"></p>
+
+
+            <button
+                class="next-btn"
+                onclick="nextQuestion()">
+
+                Next Question →
+
+            </button>
+
+
+            <div
+                class="score"
+                id="score">
+
+                Score: 0 / 5
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    Made with 💖 for Chachi G • Happy Birthday 🎂
+
+</footer>
+
+
+<!-- ================= FINAL CELEBRATION ================= -->
+
+<div
+    class="celebration"
+    id="celebration">
+
+    <div class="celebration-content">
+
+
+        <div class="celebration-photo">
+
+            <img
+                src="Chachi G.jpeg"
+                alt="Chachi G">
+
+        </div>
+
+
+        <div class="cake">
+            🎂
+        </div>
+
+
+        <h2>
+            Happy Birthday<br>
+            Chachi G!
+        </h2>
+
+
+        <p>
+            🎉 The wait is finally over! 🎉
+        </p>
+
+
+        <div class="big-text">
+            💖 Wishing You A Wonderful Birthday 💖
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+
+/* ================= MOBILE MENU ================= */
+
+function toggleMenu(){
+
+    const nav =
+        document.getElementById("navLinks");
+
+    nav.classList.toggle("show");
+
+}
+
+
+document.querySelectorAll(
+    ".nav-links a"
+).forEach(link => {
+
+    link.addEventListener(
+        "click",
+        () => {
+
+            document
+                .getElementById("navLinks")
+                .classList.remove("show");
+
+        }
+    );
+
+});
+
+
+/* ================= COUNTDOWN ================= */
+
+const birthday =
+    new Date(
+        "September 3, 2026 00:00:00"
+    ).getTime();
+
+
+let celebrationStarted = false;
+
+
+function updateCountdown(){
+
+    const now =
+        new Date().getTime();
+
+
+    const distance =
+        birthday - now;
+
+
+    /* TIMER STILL RUNNING */
+
+    if(distance > 0){
+
+        const days =
+            Math.floor(
+                distance /
+                (1000 * 60 * 60 * 24)
+            );
+
+
+        const hours =
+            Math.floor(
+                (distance /
+                (1000 * 60 * 60)) % 24
+            );
+
+
+        const minutes =
+            Math.floor(
+                (distance /
+                (1000 * 60)) % 60
+            );
+
+
+        const seconds =
+            Math.floor(
+                (distance /
+                1000) % 60
+            );
+
+
+        document.getElementById("days")
+            .textContent =
+            String(days).padStart(2,"0");
+
+
+        document.getElementById("hours")
+            .textContent =
+            String(hours).padStart(2,"0");
+
+
+        document.getElementById("minutes")
+            .textContent =
+            String(minutes).padStart(2,"0");
+
+
+        document.getElementById("seconds")
+            .textContent =
+            String(seconds).padStart(2,"0");
+
+
+        return;
+
+    }
+
+
+    /* =========================
+       TIMER FINISHED
+       ========================= */
+
+    if(!celebrationStarted){
+
+        celebrationStarted = true;
+
+
+        document.getElementById(
+            "countdownArea"
+        ).style.display = "none";
+
+
+        document.getElementById(
+            "celebration"
+        ).style.display = "flex";
+
+
+        startConfetti();
+
+
+        createCelebrationBalloons();
+
+    }
+
+}
+
+
+updateCountdown();
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+/* ================= CONFETTI ================= */
+
+function startConfetti(){
+
+    setInterval(() => {
+
+        for(
+            let i = 0;
+            i < 15;
+            i++
+        ){
+
+            const confetti =
+                document.createElement("div");
+
+
+            const emojis = [
+
+                "🎉",
+                "🎊",
+                "✨",
+                "💖",
+                "🌟",
+                "🎈",
+                "🌸",
+                "🎁",
+                "🥳"
+
+            ];
+
+
+            confetti.innerHTML =
+                emojis[
+                    Math.floor(
+                        Math.random() *
+                        emojis.length
+                    )
+                ];
+
+
+            confetti.style.position =
+                "fixed";
+
+
+            confetti.style.left =
+                Math.random() * 100 +
+                "vw";
+
+
+            confetti.style.top =
+                "-50px";
+
+
+            confetti.style.fontSize =
+                20 +
+                Math.random() * 30 +
+                "px";
+
+
+            confetti.style.zIndex =
+                "9999";
+
+
+            confetti.style.pointerEvents =
+                "none";
+
+
+            const duration =
+                2 +
+                Math.random() * 4;
+
+
+            confetti.style.transition =
+                `transform ${duration}s linear,
+                 opacity ${duration}s`;
+
+
+            document.body.appendChild(
+                confetti
+            );
+
+
+            setTimeout(() => {
+
+                confetti.style.transform =
+                    `translateY(110vh)
+                     rotate(720deg)`;
+
+
+                confetti.style.opacity =
+                    "0";
+
+            },50);
+
+
+            setTimeout(() => {
+
+                confetti.remove();
+
+            },
+            duration * 1000 + 200);
+
+        }
+
+    },300);
+
+}
+
+
+/* ================= STARS ================= */
+
+for(
+    let i = 0;
+    i < 35;
+    i++
+){
+
+    const star =
+        document.createElement("div");
+
+
+    star.className =
+        "star";
+
+
+    star.innerHTML =
+        Math.random() > .5
+        ? "✨"
+        : "⭐";
+
+
+    star.style.left =
+        Math.random() * 100 +
+        "vw";
+
+
+    star.style.fontSize =
+        8 +
+        Math.random() * 15 +
+        "px";
+
+
+    star.style.animationDuration =
+        5 +
+        Math.random() * 10 +
+        "s";
+
+
+    star.style.animationDelay =
+        Math.random() * 10 +
+        "s";
+
+
+    document.body.appendChild(
+        star
+    );
+
+}
+
+
+/* ================= BALLOONS ================= */
+
+for(
+    let i = 0;
+    i < 12;
+    i++
+){
+
+    const balloon =
+        document.createElement("div");
+
+
+    balloon.className =
+        "balloon";
+
+
+    balloon.innerHTML =
+        [
+            "🎈",
+            "🎈",
+            "🎈",
+            "💖"
+        ][
+            Math.floor(
+                Math.random() * 4
+            )
+        ];
+
+
+    balloon.style.left =
+        Math.random() * 100 +
+        "vw";
+
+
+    balloon.style.animationDuration =
+        7 +
+        Math.random() * 10 +
+        "s";
+
+
+    balloon.style.animationDelay =
+        Math.random() * 10 +
+        "s";
+
+
+    document.body.appendChild(
+        balloon
+    );
+
+}
+
+
+/* ================= CELEBRATION BALLOONS ================= */
+
+function createCelebrationBalloons(){
+
+    for(
+        let i = 0;
+        i < 30;
+        i++
+    ){
+
+        const balloon =
+            document.createElement("div");
+
+
+        balloon.innerHTML =
+            [
+                "🎈",
+                "🎈",
+                "💖",
+                "🎊",
+                "🎉"
+            ][
+                Math.floor(
+                    Math.random() * 5
+                )
+            ];
+
+
+        balloon.style.position =
+            "fixed";
+
+
+        balloon.style.left =
+            Math.random() * 100 +
+            "vw";
+
+
+        balloon.style.bottom =
+            "-60px";
+
+
+        balloon.style.fontSize =
+            25 +
+            Math.random() * 35 +
+            "px";
+
+
+        balloon.style.zIndex =
+            "6000";
+
+
+        balloon.style.pointerEvents =
+            "none";
+
+
+        balloon.style.transition =
+            "transform 6s linear, opacity 6s";
+
+
+        document.body.appendChild(
+            balloon
+        );
+
+
+        setTimeout(() => {
+
+            balloon.style.transform =
+                `translateY(-110vh)
+                 rotate(${Math.random()*360}deg)`;
+
+
+            balloon.style.opacity =
+                "0";
+
+        },100);
+
+
+        setTimeout(() => {
+
+            balloon.remove();
+
+        },6500);
+
+    }
+
+}
+
+
+/* ================= QUIZ ================= */
+
+const quizQuestions = [
+
+    {
+        question:
+            "What are we celebrating today? 🎉",
+
+        options:[
+            "Birthday",
+            "Graduation",
+            "Wedding",
+            "Holiday"
+        ],
+
+        answer:0
+    },
+
+
+    {
+        question:
+            "What should Chachi G have on her birthday? 💖",
+
+        options:[
+            "A wonderful day",
+            "A difficult exam",
+            "Lots of homework",
+            "A boring evening"
+        ],
+
+        answer:0
+    },
+
+
+    {
+        question:
+            "What do we usually have at a birthday celebration? 🎂",
+
+        options:[
+            "Birthday Cake",
+            "School Bag",
+            "Notebook",
+            "Umbrella"
+        ],
+
+        answer:0
+    },
+
+
+    {
+        question:
+            "Which one is a common birthday decoration? 🎈",
+
+        options:[
+            "Balloons",
+            "Books",
+            "Shoes",
+            "Pencils"
+        ],
+
+        answer:0
+    },
+
+
+    {
+        question:
+            "Which emoji represents a birthday cake? 🎂",
+
+        options:[
+            "🎂",
+            "📚",
+            "⚽",
+            "🚗"
+        ],
+
+        answer:0
+    }
+
+];
+
+
+let currentQuestion = 0;
+
+let score = 0;
+
+let answered = false;
+
+
+function loadQuestion(){
+
+    const q =
+        quizQuestions[
+            currentQuestion
+        ];
+
+
+    document.getElementById(
+        "question"
+    ).textContent =
+        q.question;
+
+
+    for(
+        let i = 0;
+        i < 4;
+        i++
+    ){
+
+        const button =
+            document.getElementById(
+                "option" + i
+            );
+
+
+        button.textContent =
+            q.options[i];
+
+
+        button.classList.remove(
+            "correct",
+            "wrong"
+        );
+
+
+        button.disabled =
+            false;
+
+    }
+
+
+    document.getElementById(
+        "quizResult"
+    ).textContent =
+        "";
+
+
+    document.getElementById(
+        "score"
+    ).textContent =
+        `Score: ${score} / ${quizQuestions.length}`;
+
+
+    answered = false;
+
+}
+
+
+function checkAnswer(selected){
+
+    if(answered){
+        return;
+    }
+
+
+    answered = true;
+
+
+    const q =
+        quizQuestions[
+            currentQuestion
+        ];
+
+
+    const buttons =
+        document.querySelectorAll(
+            ".quiz-options button"
+        );
+
+
+    if(selected === q.answer){
+
+        score++;
+
+
+        buttons[selected]
+            .classList.add("correct");
+
+
+        document.getElementById(
+            "quizResult"
+        ).textContent =
+            "🎉 Correct! Great job! 💖";
+
+    }
+
+    else{
+
+        buttons[selected]
+            .classList.add("wrong");
+
+
+        buttons[q.answer]
+            .classList.add("correct");
+
+
+        document.getElementById(
+            "quizResult"
+        ).textContent =
+            "💡 Not quite! The correct answer is highlighted.";
+
+    }
+
+
+    buttons.forEach(
+        button => {
+
+            button.disabled =
+                true;
+
+        }
+    );
+
+
+    document.getElementById(
+        "score"
+    ).textContent =
+        `Score: ${score} / ${quizQuestions.length}`;
+
+}
+
+
+function nextQuestion(){
+
+    if(
+        currentQuestion <
+        quizQuestions.length - 1
+    ){
+
+        currentQuestion++;
+
+        loadQuestion();
+
+    }
+
+    else{
+
+        document.getElementById(
+            "question"
+        ).textContent =
+            `🎊 Quiz Complete! Your Score: ${score} / ${quizQuestions.length}`;
+
+
+        document.querySelector(
+            ".quiz-options"
+        ).style.display =
+            "none";
+
+
+        document.querySelector(
+            ".next-btn"
+        ).style.display =
+            "none";
+
+
+        document.getElementById(
+            "quizResult"
+        ).textContent =
+
+            score === 5
+
+            ? "🏆 Perfect Score! Amazing! 💖"
+
+            : "🎉 Great job! Thanks for playing!";
+
+    }
+
+}
+
+
+loadQuestion();
+
+</script>
+
+</body>
+</html>
